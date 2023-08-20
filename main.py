@@ -1,4 +1,4 @@
-from upload_monitor import UploadMonitor
+from task_monitor.upload_monitor import UploadMonitor
 import multiprocessing
 
 if __name__ == "__main__":
