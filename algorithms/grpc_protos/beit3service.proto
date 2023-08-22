@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package beit3service;
+
+message Beit3Request {
+    bytes image = 1;
+    uint32 frame_id = 2;
+    uint32 tracker_id = 3;
+}
+
+message Beit3Response {
+    string retcode = 1;
+}
+
+message ClientResponse {
+    string retcode = 1;
+}
+
+message CallBackResult {
+    string result = 1;
+}
+
+service Beit3Service {
+    rpc EnqueueItem (Beit3Request) returns (Beit3Response);
+}
+
+service ClientService {
+    rpc ReceiveInferResult (CallBackResult) returns (ClientResponse);
+}

@@ -1,0 +1,510 @@
+Person is walking
+Person is sitting on a chair
+Person is working
+Person is waving hand
+Person is eating
+Person is drinking
+Person is talking
+Person is falling down
+Person is dancing
+Person is standing
+Person is entering the meeting room with a laptop
+Person is discussing the project progress with colleagues
+Person is answering a phone call at their desk
+Person is giving a presentation in the conference room
+Person is taking notes during the team brainstorming session
+Person is adjusting the settings on the office printer
+Person is organizing documents in the filing cabinet
+Person is offering assistance to a colleague in the cubicle
+Person is greeting clients as they arrive at the reception
+Person is typing an email on the computer in the workspace
+Person is collaborating with coworkers in a breakout session
+Person is refilling the water cooler in the break area
+Person is arranging chairs for an upcoming team meeting
+Person is using a whiteboard marker to illustrate ideas
+Person is sharing documents during a video conference call
+Person is troubleshooting technical issues at their workstation
+Person is attending a training session in the training room
+Person is brainstorming new ideas with a cross-functional team
+Person is reviewing contracts at the negotiation table
+Person is congratulating a colleague on a successful project
+Person is printing important documents from the computer
+Person is tidying up the shared kitchen after lunch
+Person is coordinating office supplies for the team
+Person is participating in a video conference from their desk
+Person is mentoring a new team member on company procedures
+Person is attending a team-building activity in the break area
+Person is collaborating on a project with remote colleagues
+Person is multitasking between emails and phone calls
+Person is conducting a one-on-one performance review
+Person is brainstorming ideas on the office whiteboard
+Person is participating in a creative brainstorming session
+Person is preparing the conference room for a client meeting
+Person is discussing budget plans with the finance department
+Person is organizing team building exercises for the month
+Person is collaborating on a shared document in the cloud
+Person is arranging seating for an office seminar
+Person is welcoming visitors to the office reception
+Person is troubleshooting a technical issue with IT support
+Person is participating in a virtual team training session
+Person is coordinating travel arrangements for a business trip
+Person is overseeing the setup of a new employee's workstation
+Person is preparing the agenda for the weekly team meeting
+Person is conducting a training session for new software tools
+Person is conducting research for an upcoming presentation
+Person is discussing marketing strategies with the marketing team
+Person is proofreading a document before it's sent out
+Person is setting up audiovisual equipment for a presentation
+Person is arranging chairs for an all-hands company meeting
+Person is welcoming remote team members to a virtual meeting
+Person is participating in a diversity and inclusion workshop
+Person is collaborating with colleagues on a shared project
+Person is responding to urgent emails in their inbox
+Person is leading a team discussion in a huddle space
+Person is conducting market research for a new product
+Person is assisting a coworker with a technical issue
+Person is brainstorming ideas for a company event
+Person is setting up a video conference call with clients
+Person is preparing a progress report for a supervisor
+Person is taking a break and chatting with coworkers
+Person is participating in a team-building icebreaker activity
+Person is organizing a farewell party for a departing colleague
+Person is coordinating logistics for an upcoming offsite meeting
+Person is troubleshooting a malfunctioning office equipment
+Person is reviewing financial statements with the accounting team
+Person is updating the company's social media profiles
+Person is scheduling interviews for job candidates
+Person is collaborating on a document using version control
+Person is leading a training session on time management
+Person is coordinating refreshments for a client presentation
+Person is participating in a brainstorming brainstorming session
+Person is organizing office decorations for a holiday event
+Person is participating in a team-building trust exercise
+Person is conducting a team meeting to discuss project status
+Person is providing feedback on a coworker's project proposal
+Person is setting up a virtual booth for an online conference
+Person is assisting a coworker with a software installation
+Person is preparing a quarterly performance report
+Person is welcoming new employees during onboarding
+Person is leading a discussion about work-life balance
+Person is managing an intern's tasks and assignments
+Person is participating in a company-wide town hall meeting
+Person is preparing for an upcoming department presentation
+Person is collaborating with cross-functional teams on a project
+Person is discussing sales strategies with the sales team
+Person is organizing a team-building scavenger hunt
+Person is reviewing project timelines with the project manager
+Person is participating in a health and wellness workshop
+Person is setting up a video shoot for a company advertisement
+Person is assisting a colleague with setting up a software tool
+Person is planning and scheduling team-building activities
+Person is preparing materials for a client pitch meeting
+Person is discussing budget allocations with the finance team
+Person is leading a brainstorming session for innovation
+Person is reviewing and approving expense reports
+Person is participating in a diversity training session
+Person is coordinating office space rearrangement
+Person is troubleshooting network connectivity issues
+Person is reviewing and updating company policies
+Person is participating in a team problem-solving workshop
+Person is preparing for an upcoming job fair or career event
+Person is participating in a team-building role-playing activity.
+Person is collaborating with coworkers on a brainstorming exercise.
+Person is conducting an interview with a job candidate.
+Person is updating the content on the company's website.
+Person is assisting in the preparation of a client proposal.
+Person is leading a discussion on workplace safety protocols.
+Person is reviewing and signing contracts with legal counsel.
+Person is setting up a video demonstration for a product launch.
+Person is facilitating a conflict resolution workshop.
+Person is coordinating a volunteer event for a charitable cause.
+Person is participating in a mock negotiation simulation.
+Person is attending a team-building ropes course activity.
+Person is organizing a team appreciation luncheon.
+Person is participating in an ergonomic workspace assessment.
+Person is setting up video conferencing equipment for remote communication.
+Person is assisting in the planning of an office relocation.
+Person is facilitating a training session on effective communication.
+Person is reviewing and updating marketing materials.
+Person is leading a brainstorming session for new product ideas.
+Person is conducting market research for potential clients.
+Person is collaborating with graphic designers on visual content.
+Person is attending a webinar on professional development.
+Person is participating in a team-building escape room challenge.
+Person is coordinating transportation for a company event.
+Person is facilitating a team workshop on time management.
+Person is participating in a team-building trust-building exercise.
+Person is conducting an orientation session for new hires.
+Person is reviewing and analyzing customer feedback.
+Person is setting up a display booth for a trade show.
+Person is coordinating logistics for an employee training program.
+Person is participating in a brainstorming session for marketing ideas.
+Person is reviewing sales metrics and performance reports.
+Person is leading a discussion on workplace diversity and inclusion.
+Person is organizing a team-building game or competition.
+Person is participating in a project status update meeting.
+Person is assisting in the planning of an office renovation.
+Person is coordinating catering for a company event.
+Person is participating in a team-building communication exercise.
+Person is leading a workshop on conflict resolution strategies.
+Person is setting up a video conference for a client presentation.
+Person is assisting a coworker in troubleshooting software issues.
+Person is participating in a team-building outdoor activity.
+Person is conducting a presentation skills training session.
+Person is reviewing and approving vacation requests.
+Person is organizing a team-building charity fundraiser.
+Person is participating in a team-building problem-solving challenge.
+Person is facilitating a team discussion on goal setting.
+Person is setting up equipment for a company town hall meeting.
+Person is coordinating registration for an industry conference.
+Person is participating in a creative brainstorming workshop.
+Person is assisting a coworker with software troubleshooting.
+Person is facilitating a team-building team-building activity.
+Person is setting up audio equipment for a presentation.
+Person is participating in a team-building team-building exercise.
+Person is reviewing project timelines with team members.
+Person is coordinating logistics for a team off-site retreat.
+Person is participating in a brainstorming session for innovation.
+Person is leading a training session on customer service.
+Person is organizing team-building team-building games.
+Person is setting up a virtual team meeting.
+Person is participating in a team-building team-building challenge.
+Person is coordinating refreshments for a department meeting.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on process improvement.
+Person is assisting in the preparation of a client presentation.
+Person is setting up equipment for a company training session.
+Person is participating in a team-building team-building event.
+Person is reviewing and updating training materials.
+Person is leading a brainstorming session for new strategies.
+Person is facilitating a team-building team-building exercise.
+Person is coordinating travel arrangements for a business trip.
+Person is participating in a team-building team-building activity.
+Person is reviewing and updating company policies.
+Person is setting up video conferencing for remote collaboration.
+Person is participating in a team-building team-building game.
+Person is coordinating logistics for a company event.
+Person is facilitating a team discussion on workplace ethics.
+Person is assisting a coworker with a project task.
+Person is setting up equipment for a client demo.
+Person is participating in a team-building team-building workshop.
+Person is reviewing and analyzing sales data.
+Person is coordinating catering for a company meeting.
+Person is facilitating a team-building team-building challenge.
+Person is participating in a team-building team-building exercise.
+Person is setting up a virtual presentation.
+Person is assisting a coworker with a technical problem.
+Person is facilitating a team discussion on leadership.
+Person is participating in a team-building team-building game.
+Person is setting up equipment for a team training session.
+Person is reviewing and approving expense reports.
+Person is coordinating logistics for a department retreat.
+Person is participating in a team-building team-building activity.
+Person is facilitating a brainstorming session for new ideas.
+Person is setting up video conferencing for a meeting.
+Person is participating in a team-building team-building event.
+Person is coordinating transportation for a company outing.
+Person is facilitating a team discussion on teamwork.
+Person is assisting a coworker with a software issue.
+Person is setting up equipment for a presentation.
+Person is participating in a team-building team-building challenge.
+Person is reviewing and updating project documentation.
+Person is coordinating logistics for a team-building retreat.
+Person is participating in a team-building icebreaker game.
+Person is facilitating a brainstorming session for marketing ideas.
+Person is setting up audiovisual equipment for a company event.
+Person is assisting a coworker with a technical troubleshooting.
+Person is coordinating travel arrangements for a conference.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on process optimization.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building activity.
+Person is reviewing and updating training curriculum.
+Person is coordinating catering for a company celebration.
+Person is facilitating a team-building team-building exercise.
+Person is participating in a team brainstorming session.
+Person is setting up equipment for a training workshop.
+Person is assisting a coworker with a technical challenge.
+Person is facilitating a team discussion on creativity.
+Person is participating in a team-building team-building game.
+Person is coordinating logistics for an office party.
+Person is setting up virtual meeting software for a call.
+Person is participating in a team-building team-building event.
+Person is facilitating a team discussion on goal setting.
+Person is reviewing and updating company guidelines.
+Person is assisting a coworker with a software setup.
+Person is facilitating a brainstorming session for solutions.
+Person is participating in a team-building team-building challenge.
+Person is setting up equipment for a presentation.
+Person is coordinating transportation for a company event.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on communication.
+Person is assisting a coworker with a project task.
+Person is setting up audio equipment for a meeting.
+Person is participating in a team-building team-building activity.
+Person is coordinating logistics for a team-building exercise.
+Person is participating in a team brainstorming brainstorming activity.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a software issue.
+Person is facilitating a team discussion on innovation.
+Person is participating in a team-building team-building game.
+Person is coordinating refreshments for a company gathering.
+Person is setting up equipment for a training session.
+Person is participating in a team-building team-building event.
+Person is facilitating a team discussion on problem-solving.
+Person is assisting a coworker with a technical problem.
+Person is setting up video conferencing for a presentation.
+Person is participating in a team-building team-building challenge.
+Person is coordinating logistics for a team-building workshop.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up equipment for a department meeting.
+Person is facilitating a team discussion on teamwork.
+Person is assisting a coworker with a project task.
+Person is setting up virtual collaboration tools for a call.
+Person is participating in a team-building team-building activity.
+Person is coordinating transportation for a company outing.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on leadership.
+Person is assisting a coworker with a software troubleshooting.
+Person is setting up audio equipment for a meeting.
+Person is participating in a team brainstorming brainstorming session.
+Person is coordinating logistics for a team-building exercise.
+Person is participating in a team-building team-building challenge.
+Person is facilitating a team discussion on communication.
+Person is assisting a coworker with a technical issue.
+Person is setting up video conferencing for a presentation.
+Person is participating in a team-building team-building activity.
+Person is coordinating refreshments for a company event.
+Person is facilitating a team discussion on problem-solving.
+Person is assisting a coworker with a project task.
+Person is setting up equipment for a training session.
+Person is participating in a team-building team-building event.
+Person is coordinating logistics for a team off-site retreat.
+Person is participating in a team brainstorming brainstorming activity.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a technical challenge.
+Person is facilitating a team discussion on creativity.
+Person is participating in a team-building team-building challenge.
+Person is coordinating transportation for a company outing.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on process optimization.
+Person is assisting a coworker with a software setup.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building activity.
+Person is reviewing and updating training curriculum.
+Person is coordinating catering for a company celebration.
+Person is facilitating a team-building team-building exercise.
+Person is participating in a team brainstorming session.
+Person is setting up equipment for a training workshop.
+Person is assisting a coworker with a technical troubleshooting.
+Person is facilitating a team discussion on leadership.
+Person is participating in a team-building team-building workshop.
+Person is coordinating logistics for an office party.
+Person is participating in a team-building team-building event.
+Person is facilitating a team discussion on goal setting.
+Person is setting up virtual meeting software for a call.
+Person is participating in a team-building team-building challenge.
+Person is assisting a coworker with a software issue.
+Person is facilitating a brainstorming session for solutions.
+Person is setting up equipment for a presentation.
+Person is participating in a team-building team-building workshop.
+Person is coordinating transportation for a team-building retreat.
+Person is participating in a team-building icebreaker game.
+Person is facilitating a brainstorming session for marketing ideas.
+Person is setting up audiovisual equipment for a company event.
+Person is assisting a coworker with a technical challenge.
+Person is coordinating travel arrangements for a conference.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on process improvement.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building activity.
+Person is reviewing and updating training materials.
+Person is coordinating catering for a company celebration.
+Person is facilitating a team-building team-building exercise.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a software issue.
+Person is facilitating a team discussion on innovation.
+Person is participating in a team-building team-building game.
+Person is coordinating logistics for an office party.
+Person is setting up equipment for a client presentation.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on communication.
+Person is assisting a coworker with a project task.
+Person is setting up audio equipment for a meeting.
+Person is participating in a team-building team-building activity.
+Person is coordinating logistics for a team-building exercise.
+Person is participating in a team brainstorming brainstorming activity.
+Person is setting up virtual meeting software for a call.
+Person is assisting a coworker with a technical problem.
+Person is facilitating a team discussion on leadership.
+Person is participating in a team-building team-building challenge.
+Person is coordinating transportation for a company outing.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on process optimization.
+Person is assisting a coworker with a software setup.
+Person is setting up video conferencing for a presentation.
+Person is participating in a team-building team-building activity.
+Person is coordinating refreshments for a company event.
+Person is facilitating a team discussion on problem-solving.
+Person is assisting a coworker with a project task.
+Person is setting up equipment for a training session.
+Person is participating in a team-building team-building event.
+Person is coordinating logistics for a team off-site retreat.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a technical challenge.
+Person is facilitating a team discussion on creativity.
+Person is participating in a team-building team-building challenge.
+Person is coordinating transportation for a company outing.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on leadership.
+Person is assisting a coworker with a software troubleshooting.
+Person is setting up audio equipment for a meeting.
+Person is participating in a team brainstorming brainstorming session.
+Person is coordinating logistics for a team-building exercise.
+Person is participating in a team-building team-building challenge.
+Person is facilitating a team discussion on communication.
+Person is assisting a coworker with a technical issue.
+Person is setting up video conferencing for a presentation.
+Person is participating in a team-building team-building activity.
+Person is coordinating refreshments for a company event.
+Person is facilitating a team discussion on problem-solving.
+Person is assisting a coworker with a project task.
+Person is setting up equipment for a training session.
+Person is participating in a team-building team-building event.
+Person is coordinating logistics for a team off-site retreat.
+Person is participating in a team brainstorming brainstorming activity.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a technical challenge.
+Person is facilitating a team discussion on creativity.
+Person is participating in a team-building team-building challenge.
+Person is coordinating transportation for a company outing.
+Person is participating in a team-building team-building workshop.
+Person is facilitating a team discussion on process optimization.
+Person is assisting a coworker with a software setup.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building activity.
+Person is reviewing and updating training curriculum.
+Person is coordinating catering for a company celebration.
+Person is facilitating a team-building team-building exercise.
+Person is participating in a team brainstorming session.
+Person is setting up equipment for a training workshop.
+Person is assisting a coworker with a technical troubleshooting.
+Person is facilitating a team discussion on leadership.
+Person is participating in a team-building team-building workshop.
+Person is coordinating logistics for an office party.
+Person is participating in a team-building team-building event.
+Person is facilitating a team discussion on goal setting.
+Person is setting up virtual meeting software for a call.
+Person is participating in a team-building team-building challenge.
+Person is assisting a coworker with a software issue.
+Person is facilitating a brainstorming session for solutions.
+Person is setting up equipment for a presentation.
+Person is participating in a team-building team-building workshop.
+Person is coordinating transportation for a team-building exercise.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a technical issue.
+Person is facilitating a team discussion on innovation.
+Person is participating in a team-building team-building game.
+Person is coordinating logistics for a department meeting.
+Person is participating in a team-building team-building activity.
+Person is assisting a coworker with a project task.
+Person is setting up audio equipment for a presentation.
+Person is participating in a team brainstorming brainstorming activity.
+Person is coordinating refreshments for a company event.
+Person is facilitating a team discussion on problem-solving.
+Person is assisting a coworker with a technical challenge.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building challenge.
+Person is facilitating a team discussion on communication.
+Person is coordinating transportation for a company outing.
+Person is participating in a team-building team-building workshop.
+Person is assisting a coworker with a software setup.
+Person is setting up equipment for a training session.
+Person is participating in a team-building team-building event.
+Person is coordinating logistics for a team off-site retreat.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a call.
+Person is facilitating a team discussion on leadership.
+Person is assisting a coworker with a technical issue.
+Person is facilitating a brainstorming session for ideas.
+Person is participating in a team-building team-building activity.
+Person is coordinating logistics for a team-building exercise.
+Person is participating in a team-building team-building challenge.
+Person is facilitating a team discussion on process optimization.
+Person is assisting a coworker with a software troubleshooting.
+Person is setting up audio equipment for a meeting.
+Person is participating in a team brainstorming brainstorming activity.
+Person is coordinating refreshments for a department meeting.
+Person is participating in a team-building team-building workshop.
+Person is assisting a coworker with a project task.
+Person is setting up video conferencing for a presentation.
+Person is participating in a team-building team-building event.
+Person is facilitating a team discussion on teamwork.
+Person is coordinating transportation for a team-building exercise.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a technical challenge.
+Person is facilitating a team discussion on creativity.
+Person is participating in a team-building team-building challenge.
+Person is coordinating logistics for an office party.
+Person is participating in a team-building team-building workshop.
+Person is assisting a coworker with a software issue.
+Person is facilitating a team discussion on innovation.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building activity.
+Person is reviewing and updating training materials.
+Person is coordinating catering for a company celebration.
+Person is facilitating a team-building team-building exercise.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a call.
+Person is assisting a coworker with a technical issue.
+Person is facilitating a brainstorming session for solutions.
+Person is participating in a team-building team-building workshop.
+Person is coordinating logistics for a department meeting.
+Person is participating in a team-building team-building activity.
+Person is assisting a coworker with a project task.
+Person is setting up audio equipment for a presentation.
+Person is participating in a team brainstorming brainstorming activity.
+Person is coordinating refreshments for a company event.
+Person is facilitating a team discussion on problem-solving.
+Person is assisting a coworker with a technical challenge.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building challenge.
+Person is coordinating transportation for a company outing.
+Person is participating in a team-building team-building workshop.
+Person is assisting a coworker with a software setup.
+Person is setting up equipment for a training session.
+Person is participating in a team-building team-building event.
+Person is coordinating logistics for a team off-site retreat.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a meeting.
+Person is facilitating a team discussion on leadership.
+Person is assisting a coworker with a technical issue.
+Person is facilitating a brainstorming session for ideas.
+Person is participating in a team-building team-building activity.
+Person is coordinating logistics for a team-building exercise.
+Person is participating in a team-building team-building challenge.
+Person is facilitating a team discussion on communication.
+Person is assisting a coworker with a project task.
+Person is setting up audio equipment for a meeting.
+Person is participating in a team brainstorming brainstorming activity.
+Person is coordinating refreshments for a department meeting.
+Person is participating in a team-building team-building workshop.
+Person is assisting a coworker with a technical challenge.
+Person is setting up video conferencing for a presentation.
+Person is participating in a team-building team-building event.
+Person is facilitating a team discussion on teamwork.
+Person is coordinating transportation for a team-building exercise.
+Person is participating in a team brainstorming brainstorming session.
+Person is setting up virtual collaboration tools for a meeting.
+Person is assisting a coworker with a software issue.
+Person is facilitating a team discussion on innovation.
+Person is participating in a team-building team-building challenge.
+Person is coordinating logistics for an office party.
+Person is participating in a team-building team-building workshop.
+Person is assisting a coworker with a project task.
+Person is setting up video conferencing for a virtual meeting.
+Person is participating in a team-building team-building activity.

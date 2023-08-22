@@ -1,0 +1,358 @@
+2023-08-21 23:53:49,478 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-21 23:53:49,482 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-21 23:53:49,484 - DEBUG - interactive is False
+2023-08-21 23:53:49,484 - DEBUG - platform is linux
+2023-08-21 23:53:49,527 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-21 23:53:49,528 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:04:28,601 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 00:04:28,606 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 00:04:28,607 - DEBUG - interactive is False
+2023-08-22 00:04:28,607 - DEBUG - platform is linux
+2023-08-22 00:04:28,650 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 00:04:28,652 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:07:41,647 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 00:07:41,651 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 00:07:41,652 - DEBUG - interactive is False
+2023-08-22 00:07:41,652 - DEBUG - platform is linux
+2023-08-22 00:07:41,695 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 00:07:41,697 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:11:47,306 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 00:11:47,310 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 00:11:47,312 - DEBUG - interactive is False
+2023-08-22 00:11:47,312 - DEBUG - platform is linux
+2023-08-22 00:11:47,354 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 00:11:47,356 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:12:11,801 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 00:12:12,380 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 00:12:29,607 - INFO - freeze vision encoder
+2023-08-22 00:12:29,834 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 00:12:32,271 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 00:12:33,533 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 00:13:53,303 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 00:13:53,307 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 00:13:53,308 - DEBUG - interactive is False
+2023-08-22 00:13:53,309 - DEBUG - platform is linux
+2023-08-22 00:13:53,352 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 00:13:53,353 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:14:15,769 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 00:14:16,312 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 00:14:31,782 - INFO - freeze vision encoder
+2023-08-22 00:14:32,007 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 00:14:34,583 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 00:14:35,546 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 00:17:17,197 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 00:17:17,201 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 00:17:17,202 - DEBUG - interactive is False
+2023-08-22 00:17:17,202 - DEBUG - platform is linux
+2023-08-22 00:17:17,246 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 00:17:17,248 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:17:39,527 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 00:17:40,167 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 00:17:56,765 - INFO - freeze vision encoder
+2023-08-22 00:17:57,026 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 00:17:59,700 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 00:18:00,608 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 00:19:21,563 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 00:19:21,567 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 00:19:21,569 - DEBUG - interactive is False
+2023-08-22 00:19:21,569 - DEBUG - platform is linux
+2023-08-22 00:19:21,612 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 00:19:21,613 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:19:45,133 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 00:19:45,771 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 00:20:02,256 - INFO - freeze vision encoder
+2023-08-22 00:20:02,517 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 00:20:05,109 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 00:20:05,996 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 00:20:39,680 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/5cc2e58c-d349-4642-8d4c-06f01bc9f1fc_20230822_002039_test.zip
+2023-08-22 00:20:41,286 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 00:20:41,473 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 00:22:06,049 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 00:22:06,053 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 00:22:06,054 - DEBUG - interactive is False
+2023-08-22 00:22:06,054 - DEBUG - platform is linux
+2023-08-22 00:22:06,097 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 00:22:06,098 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 00:22:30,179 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 00:22:45,829 - INFO - freeze vision encoder
+2023-08-22 00:22:45,832 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 00:22:48,293 - DEBUG - Starting new HTTPS connection (3): huggingface.co:443
+2023-08-22 00:22:49,345 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 00:24:44,195 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/1f6e171a-b5c9-43d8-adaf-d004c05be609_20230822_002444_test.zip
+2023-08-22 00:24:45,824 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 00:24:46,015 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 02:37:53,755 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 02:37:53,759 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 02:37:53,761 - DEBUG - interactive is False
+2023-08-22 02:37:53,761 - DEBUG - platform is linux
+2023-08-22 02:37:53,804 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 02:37:53,805 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 02:38:16,950 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 02:38:34,665 - INFO - freeze vision encoder
+2023-08-22 02:38:34,669 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 02:38:36,539 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 02:38:38,993 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 02:38:40,047 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 02:41:21,949 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/7141101a-c042-4502-b990-6a1e3383f9d3_20230822_024121_upload_test.zip
+2023-08-22 02:42:58,304 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 02:42:58,308 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 02:42:58,309 - DEBUG - interactive is False
+2023-08-22 02:42:58,309 - DEBUG - platform is linux
+2023-08-22 02:42:58,351 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 02:42:58,352 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 02:43:21,871 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 02:43:38,409 - INFO - freeze vision encoder
+2023-08-22 02:43:38,413 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 02:43:38,788 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 02:43:41,571 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 02:43:42,431 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 02:44:06,358 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/a50d12de-a5e6-44e3-820b-28bc2e8019cc_20230822_024406_upload_test.zip
+2023-08-22 02:44:08,045 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 02:44:08,225 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 02:45:24,524 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 02:45:24,528 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 02:45:24,529 - DEBUG - interactive is False
+2023-08-22 02:45:24,530 - DEBUG - platform is linux
+2023-08-22 02:45:24,572 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 02:45:24,573 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 02:45:47,482 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 02:45:47,883 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 02:46:04,971 - INFO - freeze vision encoder
+2023-08-22 02:46:05,208 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 02:46:07,800 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 02:46:08,681 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 02:46:32,616 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/6d099c58-149e-4076-ac18-83a5e12feb50_20230822_024632_upload_test.zip
+2023-08-22 02:46:34,330 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 02:46:34,543 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 02:48:06,441 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 02:48:06,445 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 02:48:06,446 - DEBUG - interactive is False
+2023-08-22 02:48:06,447 - DEBUG - platform is linux
+2023-08-22 02:48:06,489 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 02:48:06,490 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 02:48:29,990 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 02:48:30,419 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 02:48:46,228 - INFO - freeze vision encoder
+2023-08-22 02:48:46,470 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 02:48:49,184 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 02:48:50,045 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 02:49:04,525 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/5b9a007b-e0d8-41b6-b0bb-3535d6c0b020_20230822_024904_upload_test.zip
+2023-08-22 02:49:06,231 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 02:49:06,416 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 02:57:26,827 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 02:57:26,831 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 02:57:26,832 - DEBUG - interactive is False
+2023-08-22 02:57:26,832 - DEBUG - platform is linux
+2023-08-22 02:57:26,878 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 02:57:26,880 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 02:58:16,443 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 02:58:16,447 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 02:58:16,448 - DEBUG - interactive is False
+2023-08-22 02:58:16,448 - DEBUG - platform is linux
+2023-08-22 02:58:16,491 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 02:58:16,493 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 02:59:00,508 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 02:59:00,513 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 02:59:00,514 - DEBUG - interactive is False
+2023-08-22 02:59:00,514 - DEBUG - platform is linux
+2023-08-22 02:59:00,558 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 02:59:00,559 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 02:59:23,532 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 02:59:24,083 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 02:59:39,750 - INFO - freeze vision encoder
+2023-08-22 02:59:39,979 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 02:59:42,586 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 02:59:43,476 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 03:00:18,972 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 03:00:18,976 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 03:00:18,977 - DEBUG - interactive is False
+2023-08-22 03:00:18,977 - DEBUG - platform is linux
+2023-08-22 03:00:19,019 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 03:00:19,020 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 03:00:41,418 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 03:00:57,678 - INFO - freeze vision encoder
+2023-08-22 03:00:57,680 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 03:01:00,140 - DEBUG - Starting new HTTPS connection (3): huggingface.co:443
+2023-08-22 03:01:00,680 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 03:01:01,525 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 03:01:11,925 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/7b7fc73f-a174-4099-b027-bc27040f5733_20230822_030111_upload_test.zip
+2023-08-22 03:01:13,763 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:01:13,951 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:02:13,904 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:02:14,127 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:03:14,021 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:03:14,199 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:04:14,135 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:04:14,315 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:05:14,246 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:05:14,815 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:06:14,340 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:06:14,517 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:07:14,476 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:07:14,661 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:08:14,566 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:08:14,992 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:43:57,531 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 03:43:57,535 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 03:43:57,536 - DEBUG - interactive is False
+2023-08-22 03:43:57,536 - DEBUG - platform is linux
+2023-08-22 03:43:57,582 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 03:43:57,583 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 03:44:21,965 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 03:44:22,413 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 03:44:38,349 - INFO - freeze vision encoder
+2023-08-22 03:44:38,599 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 03:44:41,166 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 03:44:42,052 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 03:45:40,875 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/19e7fdb1-25af-489e-8542-1b36cc7c409e_20230822_034540_upload_test.zip
+2023-08-22 03:45:42,687 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:45:42,861 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:46:42,857 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:46:43,039 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:47:42,931 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:47:43,112 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:48:42,955 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:48:43,136 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:49:43,030 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:49:43,204 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:50:43,072 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:50:43,258 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:51:43,078 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:51:43,293 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 03:52:43,228 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 03:52:43,464 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 05:35:39,754 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 05:35:39,759 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 05:35:39,760 - DEBUG - interactive is False
+2023-08-22 05:35:39,760 - DEBUG - platform is linux
+2023-08-22 05:35:39,804 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 05:35:39,805 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 05:36:06,119 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 05:36:23,992 - INFO - freeze vision encoder
+2023-08-22 05:36:23,994 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 05:36:25,093 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 05:36:27,943 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 05:36:29,103 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 05:38:54,946 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 05:38:54,950 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 05:38:54,951 - DEBUG - interactive is False
+2023-08-22 05:38:54,951 - DEBUG - platform is linux
+2023-08-22 05:38:54,993 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 05:38:54,995 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 05:39:20,507 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 05:39:21,006 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 05:39:23,060 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/a0550050-4885-4301-871d-20f322e787f0_20230822_053923_upload.zip
+2023-08-22 05:39:37,200 - INFO - freeze vision encoder
+2023-08-22 05:39:37,429 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 05:39:40,181 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 05:39:41,131 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 05:39:44,072 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 05:39:44,254 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 05:42:14,723 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 05:42:14,727 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 05:42:14,728 - DEBUG - interactive is False
+2023-08-22 05:42:14,729 - DEBUG - platform is linux
+2023-08-22 05:42:14,771 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 05:42:14,773 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 05:42:39,789 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 05:42:56,652 - INFO - freeze vision encoder
+2023-08-22 05:42:56,657 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 05:42:57,030 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 05:42:59,708 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 05:43:00,601 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 05:43:54,339 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 05:43:54,343 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 05:43:54,344 - DEBUG - interactive is False
+2023-08-22 05:43:54,345 - DEBUG - platform is linux
+2023-08-22 05:43:54,386 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 05:43:54,388 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 05:44:12,299 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/9999c6e8-dad5-497d-b7da-c2a8dc32d6c3_20230822_054412_upload.zip
+2023-08-22 05:44:18,997 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 05:44:36,299 - INFO - freeze vision encoder
+2023-08-22 05:44:36,302 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 05:44:38,947 - DEBUG - Starting new HTTPS connection (3): huggingface.co:443
+2023-08-22 05:44:39,554 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 05:44:40,372 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 05:44:43,556 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 05:44:43,753 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 05:47:37,729 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 05:47:37,733 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 05:47:37,734 - DEBUG - interactive is False
+2023-08-22 05:47:37,734 - DEBUG - platform is linux
+2023-08-22 05:47:37,777 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 05:47:37,778 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 05:48:03,474 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 05:48:04,150 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 05:48:21,718 - INFO - freeze vision encoder
+2023-08-22 05:48:21,991 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 05:48:24,789 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 05:48:25,690 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 05:51:27,120 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/b4520421-6c2f-4b79-8cdb-95889644e342_20230822_055127_test.zip
+2023-08-22 05:51:29,109 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 05:51:29,290 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 05:59:53,106 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 05:59:53,110 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 05:59:53,111 - DEBUG - interactive is False
+2023-08-22 05:59:53,112 - DEBUG - platform is linux
+2023-08-22 05:59:53,155 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 05:59:53,156 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 06:00:18,344 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 06:00:35,687 - INFO - freeze vision encoder
+2023-08-22 06:00:35,696 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 06:00:36,336 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 06:00:39,131 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 06:00:40,066 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 06:02:21,291 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/688b7c86-d8e4-48e3-acfb-5057882bc35c_20230822_060221_test.zip
+2023-08-22 06:02:23,359 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 06:02:23,531 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 06:04:40,904 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 06:04:40,908 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 06:04:40,910 - DEBUG - interactive is False
+2023-08-22 06:04:40,910 - DEBUG - platform is linux
+2023-08-22 06:04:40,953 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 06:04:40,954 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 06:05:05,442 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 06:05:06,094 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 06:05:23,290 - INFO - freeze vision encoder
+2023-08-22 06:05:23,550 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 06:05:26,122 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 06:05:27,135 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 06:06:09,161 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/e8222369-f14b-4231-8630-3733224a6d0e_20230822_060609_test.zip
+2023-08-22 06:06:11,152 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 06:06:11,336 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 06:07:00,514 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 06:07:00,518 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 06:07:00,519 - DEBUG - interactive is False
+2023-08-22 06:07:00,520 - DEBUG - platform is linux
+2023-08-22 06:07:00,565 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 06:07:00,566 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 06:07:25,836 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 06:07:43,682 - INFO - freeze vision encoder
+2023-08-22 06:07:43,684 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2023-08-22 06:07:44,350 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 06:07:46,717 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 06:07:47,658 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 06:08:23,627 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/9b76d554-d270-4f66-b6b3-6a591606edcb_20230822_060823_test.zip
+2023-08-22 06:08:25,621 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 06:08:25,803 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 06:11:10,746 - DEBUG - matplotlib data path: /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data
+2023-08-22 06:11:10,751 - DEBUG - CONFIGDIR=/root/.config/matplotlib
+2023-08-22 06:11:10,752 - DEBUG - interactive is False
+2023-08-22 06:11:10,752 - DEBUG - platform is linux
+2023-08-22 06:11:10,795 - DEBUG - CACHEDIR=/root/.cache/matplotlib
+2023-08-22 06:11:10,796 - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v330.json
+2023-08-22 06:11:33,880 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-08-22 06:11:34,799 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-08-22 06:11:50,679 - INFO - freeze vision encoder
+2023-08-22 06:11:50,936 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-22 06:11:53,495 - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/generation_config.json HTTP/1.1" 404 0
+2023-08-22 06:11:54,406 - INFO - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
+2023-08-22 06:23:29,496 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/638054e0-9af1-4299-ac3a-6d7f229a7975_20230822_062329_test.zip
+2023-08-22 06:23:31,358 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 06:23:31,541 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 06:24:44,588 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/f8952a8d-1c89-499f-a0bb-68f9b24e22ec_20230822_062444_test.zip
+2023-08-22 06:24:44,802 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 06:24:44,986 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0
+2023-08-22 06:28:59,807 - INFO - Starting downstream task for filename: /data/xcao/upload/recognize_tmp/66e33c7d-600c-48f0-9fc2-59b792c5799c_20230822_062859_test.zip
+2023-08-22 06:29:00,024 - DEBUG - Starting new HTTPS connection (1): www.google-analytics.com:443
+2023-08-22 06:29:00,205 - DEBUG - https://www.google-analytics.com:443 "POST /mp/collect?measurement_id=G-X8NCJYTQXM&api_secret=QLQrATrNSwGRFRLE-cbHJw HTTP/1.1" 204 0

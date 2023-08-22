@@ -2,7 +2,9 @@ tasks:
   - type: recognize
     upload_directory: "/data/xcao/upload/recognize"
     tmp_directory: "/data/xcao/upload/recognize_tmp"
+    done_directory: "/data/xcao/upload/recognize_done"
 
   - type: retrieval
     upload_directory: "/data/xcao/upload/retrieval"
     tmp_directory: "/data/xcao/upload/retrieval_tmp"
+    done_directory: "/data/xcao/upload/retrieval_done"
