@@ -47,8 +47,8 @@ class VideoAnalyzer:
         print(f"processed_save_path: {output_path}")
         self.beit3_model.infer_text(prompt_list)
         cap = cv2.VideoCapture(src_file)
-        # frame_rate = cap.get(cv2.CAP_PROP_FPS)
-        frame_rate = 10
+        frame_rate = cap.get(cv2.CAP_PROP_FPS)
+        # frame_rate = 10
         video_out = cv2.VideoWriter(tmp_save_path, cv2.VideoWriter_fourcc(*'XVID'), frame_rate, (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))))
         sample_rate = 5
         frame_counter = 0
