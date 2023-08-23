@@ -49,7 +49,7 @@ class BEIT3Model:
         
     def infer_text(self, prompt_list):
         prompt_features = []
-        prompt_prefix = "A series of images of "
+        prompt_prefix = "a series of images of "
         for prompt in prompt_list:
             start_time = time.time()
             print(f"load prompt: {prompt}")

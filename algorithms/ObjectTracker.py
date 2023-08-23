@@ -12,7 +12,6 @@ class ObjectTracker:
         self.classid = None
         self.id = random.randint(0, 100)
         self.objMissingCounter = 0
-        self.keepCounter = 1
         self.clipQueue = deque(maxlen=clipQueueLen)
         self.captionQueue = deque(maxlen=capQueuLen)
         self.clipImg = None
@@ -21,6 +20,7 @@ class ObjectTracker:
         self.caption_show = ''
         self.caption_last_infer = None
         self.caption_keep_counter = 0
+        self.keepCounter = 1
 
     def find_max_frequency_caption(self):
         if len(self.captionQueue) < self.captionQueue.maxlen:

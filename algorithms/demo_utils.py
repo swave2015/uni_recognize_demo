@@ -4,6 +4,7 @@ from scipy.spatial import distance
 from PIL import Image, ImageDraw, ImageFont
 import math
 import cv2
+import random
 
 def get_iou(bb1, bb2):
     """
@@ -99,6 +100,67 @@ def merge_overlapping_boxes(boxes):
         merged_boxes.append(merged_box)
 
     return merged_boxes
+
+def caption_multi_line_topK(xy, caption, img, caption_font, xy_shift, isBbox=False, caption_num=3, split_len=6):
+    text_color = (0, 0, 0)
+    default_rgb_color = (84, 198, 247)
+    color_list = [(255, 0, 0), (255, 150, 0), (255, 200, 0)]
+    while len(color_list) < caption_num:
+        # Randomly generate a new color (values between 0 and 255 for each channel)
+        random_color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+
+        # Only add the color if it's not already in the list
+        if random_color not in color_list:
+            color_list.append(random_color)
+    x1, y1 = xy
+    x1_shift, y1_shift = xy_shift
+    split_lines = caption.split(' ')
+    lines = []
+    draw = ImageDraw.Draw(img)
+    if int(len(split_lines) / split_len) == 0:
+        if isBbox:
+            caption_list = caption.split('\n')
+            for index, caption in enumerate(caption_list):
+                text_size = caption_font.getsize(caption)
+                draw.rectangle([x1 + x1_shift, y1 + y1_shift - (len(caption_list) - index) * text_size[1], x1 + x1_shift + text_size[0], y1 + y1_shift - (len(caption_list) - index -1) * text_size[1]], fill=color_list[index])
+                draw.text((x1 + x1_shift, y1 + y1_shift - (len(caption_list) - index) * caption_font.getsize(caption)[1]), caption, font=caption_font, fill=text_color)
+        else:
+            text_size = caption_font.getsize(caption)
+            draw.rectangle([x1, y1, x1 + text_size[0], y1 + text_size[1]], fill=default_rgb_color)
+            draw.text((x1, y1), caption, font=caption_font, fill=text_color)
+        return img
+    elif int(len(split_lines) / split_len) > 0:
+        for i in range(math.ceil(len(split_lines) / split_len)):
+            lines.append(split_lines[split_len * i: split_len * (i + 1)])
+    y_text = y1
+    x_text = x1
+    line_show_list = []
+    max_x_size = 0
+    y_text_height = 0
+    for line in lines:
+        line_show = ' '.join(line)
+        line_show_list.append(line_show)
+        text_size = caption_font.getsize(line_show)
+        x_text_size = text_size[0]
+        y_text_height += text_size[1]
+        if x_text_size > max_x_size:
+            max_x_size = x_text_size
+
+    if isBbox:
+        y_text = y1 - y_text_height + y1_shift
+        x_text = x1  + x1_shift
+    
+  
+
+    draw.rectangle([x_text, y_text, x_text + max_x_size, y_text + y_text_height], fill=rgb_color)
+
+    for line in line_show_list:
+        draw.text((x_text, y_text), line, font=caption_font, fill=text_color)
+        y_text += caption_font.getsize(line)[1]
+    
+    return img
+
+
 
 def caption_multi_line(xy, caption, img, caption_font, rgb_color, xy_shift, isBbox=False, split_len=6):
     text_color = (0, 0, 0)

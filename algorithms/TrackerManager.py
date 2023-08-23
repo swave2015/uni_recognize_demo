@@ -6,15 +6,16 @@ class TrackerManager:
         self.iou_thres = 0.001
         self.bbox_area_thres = -1
         self.trackers = []
+        self.keep_counter = 2
 
-    def update_trackers(self, detection_boxes, keep_counter=1, merge=True):
+    def update_trackers(self, detection_boxes, merge=True):
         if len(detection_boxes) == 0:
             for tracker in self.trackers:
                 tracker.objMissingCounter += 1
 
             new_trackers = []
             for tracker in self.trackers:
-                if tracker.objMissingCounter < keep_counter:
+                if tracker.objMissingCounter < self.keep_counter:
                     new_trackers.append(tracker)
             self.trackers = new_trackers  
 
@@ -76,7 +77,7 @@ class TrackerManager:
                 self.trackers[tracker_id].objMissingCounter += 1
         new_trackers = []
         for tracker in self.trackers:
-            if tracker.objMissingCounter < keep_counter:
+            if tracker.objMissingCounter < self.keep_counter:
                 new_trackers.append(tracker)
         self.trackers = new_trackers   
 

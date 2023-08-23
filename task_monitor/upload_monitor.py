@@ -107,6 +107,7 @@ class UploadMonitor:
                     unique_id = uuid.uuid4()
                     target_path = os.path.join(task['tmp_directory'], str(unique_id) + '_' + time_string + '_' + os.path.basename(filepath))
                     shutil.move(filepath, target_path)
+                    # shutil.copy(filepath, target_path)
                     print(f"Move file || src: {filepath} || target: {target_path}")
                     ori_filename =  os.path.basename(filepath)
                     ori_filename_without_ext = os.path.splitext(ori_filename)[0]
