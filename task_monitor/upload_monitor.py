@@ -6,9 +6,6 @@ import shutil
 import datetime
 import uuid
 import zipfile
-from log_utls import Logger
-
-log = Logger()
 
 class UploadMonitor:
     
@@ -58,7 +55,6 @@ class UploadMonitor:
     def downstream_task(self, task, ori_filename, zip_filepath):
         # Replace with your actual downstream task
         print(f"Starting downstream task for filename: {zip_filepath}")
-        log.info(f"Starting downstream task for filename: {zip_filepath}")
         dir_path = os.path.dirname(zip_filepath)
         filename = os.path.basename(zip_filepath)
         filename_without_ext =  os.path.splitext(filename)[0]
