@@ -45,7 +45,7 @@ class UploadMonitor:
                 return [line.strip() for line in lines if line.strip() != '']
             return None
 
-        targets = ['person', 'cat', 'dog', 'bird']
+        targets = ['target_actions']
         prompt_dict = {}
 
         for target in targets:

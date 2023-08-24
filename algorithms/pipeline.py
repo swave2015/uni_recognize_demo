@@ -28,7 +28,7 @@ class VideoAnalyzer:
         self.beit3_model = BEIT3Model(self.device)
         self.blip2_model, self.vis_processors, self.text_processors = load_model_and_preprocess("blip2_image_text_matching", "pretrain", device=self.device, is_eval=True)
         print('BLIP2 model load success')
-        self.target_dict = { 792: 'person', 224: 'cat', 377: 'dog' }
+        self.target_dict = { 792: 'person', 224: 'cat', 377: 'dog', 98: 'bird' }
         self.caption_font = ImageFont.truetype("/data/xcao/code/uni_recognize_demo/algorithms/miscellaneous/fonts/Arial.ttf", 20)
         self.task_queue = task_queue
         self.topk_num = 3
@@ -160,7 +160,7 @@ class VideoAnalyzer:
         while True:
             item = self.task_queue.get()
             file_dir = item[0]
-            prompt_list = item[1]['person']
+            prompt_list = item[1]['target_actions']
             save_dir = item[2]
             for filename in os.listdir(file_dir):
                 file_ext = os.path.splitext(filename)[1].lower()
