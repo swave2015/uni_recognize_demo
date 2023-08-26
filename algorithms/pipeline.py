@@ -13,9 +13,10 @@ import threading
 import os
 import shutil
 import uuid
+import json
 
 class VideoAnalyzer:
-    def __init__(self, src_path, yolo_model_path, prompt_file_path, frame, font_path, task_queue, device="cuda"):
+    def __init__(self, src_path, yolo_model_path, prompt_file_path, frame, font_path, recognize_queue, retrival_queue, device="cuda"):
         self.src_path = src_path
         self.yolo_model_path = yolo_model_path
         self.prompt_file_path = prompt_file_path
@@ -28,16 +29,79 @@ class VideoAnalyzer:
         self.beit3_model = BEIT3Model(self.device)
         self.blip2_model, self.vis_processors, self.text_processors = load_model_and_preprocess("blip2_image_text_matching", "pretrain", device=self.device, is_eval=True)
         print('BLIP2 model load success')
-        self.target_dict = { 792: 'person', 224: 'cat', 377: 'dog', 98: 'bird' }
+        self.target_dict = { 792: 'person', 224: 'cat', 377: 'dog', 98: 'bird', 75: 'bear' }
         self.caption_font = ImageFont.truetype("/data/xcao/code/uni_recognize_demo/algorithms/miscellaneous/fonts/Arial.ttf", 20)
-        self.task_queue = task_queue
+        self.recognize_queue = recognize_queue
+        self.retrival_queue = retrival_queue
         self.topk_num = 3
+        self.retrival_sample_per_vid = 5
+        self.retrival_thres = 0.60
 
-    def analyze_video(self, prompt_list, src_file, save_dir):
+    def analyze_video_retrival(self, src_file, save_dir, prompt_list):
+        print(f"start_process_retirval_file: {src_file}")
+        filename = os.path.basename(src_file)
+        filename_without_ext = os.path.splitext(filename)[0]
+        cap = cv2.VideoCapture(src_file)
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        interval = total_frames // (self.retrival_sample_per_vid + 1)
+        input_size = 384
+        scores_list = []
+        frames = []
+        for i in range(1, self.retrival_sample_per_vid + 1):
+            # Set the position of which frame to capture.
+            cap.set(cv2.CAP_PROP_POS_FRAMES, i * interval)
+            
+            # Read the frame.
+            ret, frame = cap.read()
+            frames.append(frame)
+            if ret:
+                processed_img = resize_or_pad(frame, input_size)
+                scores = self.beit3_model.infer_img(processed_img).detach().numpy()[0]
+                scores_list.append(scores)
+                
+        score_array = np.array(scores_list).T
+        index_value_pair = [(np.where(row > self.retrival_thres)[0], row[row > self.retrival_thres]) for row in score_array]
+        matched_text = []
+        for i, (ind, val) in enumerate(index_value_pair):
+            if len(ind) >= (3 / 5) * self.retrival_sample_per_vid:
+                matched_text.append(prompt_list[i])
+                search_text_save_path = os.path.join(save_dir, prompt_list[i], filename_without_ext)
+                if not os.path.exists(search_text_save_path):
+                    os.makedirs(search_text_save_path)
+                font = cv2.FONT_HERSHEY_SIMPLEX
+                font_scale = 1
+                font_thickness = 2
+                color = (0, 0, 0)  # Color of the text (white in BGR format)
+                text = prompt_list[i]
+                  # Calculate text size
+                (text_width, text_height), _ = cv2.getTextSize(text + ' ' + 'dist:0.00', font, font_scale, font_thickness)
+                
+                # Calculate center position for text
+                frame_height, frame_width, _ = frames[0].shape
+                x = (frame_width - text_width) // 2
+                y = (frame_height + text_height) // 10
+                
+                # Rectangle properties
+                rectangle_bgr = (247, 198, 84)  # Background for the text (white in BGR format)
+                rect_start = (x - 10, y - text_height - 10)  # added/subtracted 10 for padding
+                rect_end = (x + text_width + 10, y + 10)
+
+                for frame_index, dis_score in zip(ind, val):
+                    cv2.rectangle(frames[frame_index], rect_start, rect_end, rectangle_bgr, -1)
+                    cv2.putText(frames[frame_index], text + ' ' + "dist:{:.2f}".format(dis_score), (x, y), font, font_scale, color, font_thickness, lineType=cv2.LINE_AA)
+                    frame_save_path = os.path.join(search_text_save_path, f"frame{frame_index}.jpg")
+                    cv2.imwrite(frame_save_path, frames[frame_index])
+                    print(f"save frame{frame_index}.jpg, search_text: {text}, save path: {frame_save_path}")
+        
+        return matched_text
+                
+
+    def analyze_video_recognize(self, prompt_list, src_file, save_dir):
         print('target_dict_keys: ', self.target_dict.keys())
         print(f"src_file: {src_file}")
         print(f"prompt_list: {prompt_list}")
-        ITM_prefix = "a series of images of "
+        # ITM_prefix = "a series of images of "
+        ITM_prefix = ""
         tmp_dir_name = os.path.dirname(src_file)
         save_name = os.path.basename(src_file)
         save_name_without_ext = os.path.splitext(save_name)[0]
@@ -50,7 +114,7 @@ class VideoAnalyzer:
         frame_rate = cap.get(cv2.CAP_PROP_FPS)
         # frame_rate = 10
         video_out = cv2.VideoWriter(tmp_save_path, cv2.VideoWriter_fourcc(*'XVID'), frame_rate, (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))))
-        sample_rate = 5
+        sample_rate = 15
         frame_counter = 0
         input_size = 384
         rgb_color = (84, 198, 247)
@@ -120,9 +184,6 @@ class VideoAnalyzer:
                             else:
                                 tracker.caption_show += caption
 
-                        # caption_multi_line_topK((x1, y1), tracker.caption_show,
-                        #                                     pil_image_ori, self.caption_font, 
-                        #                                     (0, 0), isBbox=True, caption_num=analyze_topK_num, split_len=100)
                         caption_multi_line_topK(xy=(x1, y1), 
                                                 caption=tracker.caption_show, 
                                                 img=pil_image_ori, 
@@ -133,9 +194,6 @@ class VideoAnalyzer:
                                                 split_len=100)
 
                     else:
-                        # caption_multi_line_topK((x1, y1), tracker.caption_show,
-                        #                                 pil_image_ori, self.caption_font, 
-                        #                                 rgb_color, (0, 0), isBbox=True, caption_num=analyze_topK_num, split_len=100)
                          caption_multi_line_topK(xy=(x1, y1), 
                                                 caption=tracker.caption_show, 
                                                 img=pil_image_ori, 
@@ -158,16 +216,40 @@ class VideoAnalyzer:
 
     def analyze_task(self):
         while True:
-            item = self.task_queue.get()
-            file_dir = item[0]
-            prompt_list = item[1]['target_actions']
-            save_dir = item[2]
-            for filename in os.listdir(file_dir):
-                file_ext = os.path.splitext(filename)[1].lower()
-                if file_ext in ['.mp4', '.avi', '.mkv', '.ts', '.mov']:
-                    video_path = os.path.join(file_dir, filename)
-                    print(f"Found video: {video_path}")
-                    self.analyze_video(prompt_list, video_path, save_dir)
+            if self.recognize_queue.qsize() > 0:
+                item = self.recognize_queue.get()
+                file_dir = item[0]
+                prompt_list = item[1]['target_actions']
+                save_dir = item[2]
+                for filename in os.listdir(file_dir):
+                    file_ext = os.path.splitext(filename)[1].lower()
+                    if file_ext in ['.mp4', '.avi', '.mkv', '.ts', '.mov']:
+                        video_path = os.path.join(file_dir, filename)
+                        print(f"Found video: {video_path}")
+                        self.analyze_video_recognize(prompt_list, video_path, save_dir)
+            if self.retrival_queue.qsize() > 0:
+                item = self.retrival_queue.get()
+                file_dir = item[0]
+                prompt_list = item[1]['search_texts']
+                save_dir = item[2]
+                self.beit3_model.infer_text(prompt_list)
+                retrival_res = {}
+                for text in prompt_list:
+                    retrival_res[text] = []
+                for filename in os.listdir(file_dir):
+                    file_ext = os.path.splitext(filename)[1].lower()
+                    if file_ext in ['.mp4', '.avi', '.mkv', '.ts', '.mov']:
+                        video_path = os.path.join(file_dir, filename)
+                        print(f"Found video: {video_path}")
+                        match_list = self.analyze_video_retrival(video_path, save_dir, prompt_list)
+                        for match_text in match_list:
+                            if match_text in retrival_res.keys():
+                                retrival_res[match_text].append(filename)
+                print(f"retrival_res: {retrival_res}")
+                res_save_path = os.path.join(save_dir, 'search_result.json')
+                with open(res_save_path, 'w') as file:
+                    json.dump(retrival_res, file, indent=4)
+               
                             
     def start_analyze(self):
         thread = threading.Thread(target=self.analyze_task)

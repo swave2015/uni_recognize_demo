@@ -9,12 +9,13 @@ import zipfile
 
 class UploadMonitor:
     
-    def __init__(self, task_queue, config_file="./config/config.yaml", duration=5, scan_interval=10):
+    def __init__(self, recognize_queue, retrival_queue, config_file="./config/config.yaml", duration=5, scan_interval=10):
         self.config_file = config_file
         self.duration = duration
         self.scan_interval = scan_interval
         self.tasks = self.get_tasks_from_config()
-        self.task_queue = task_queue
+        self.recognize_queue = recognize_queue
+        self.retrival_queue = retrival_queue
 
     # def __init__(self, config_file="/data/xcao/code/uni_recognize_demo/config/config.yaml", duration=5, scan_interval=10):
     #     self.config_file = config_file
@@ -51,6 +52,25 @@ class UploadMonitor:
                 prompt_dict[target] = prompt
 
         return prompt_dict
+    
+    def get_search_prompts(self, directory):
+        def get_prompt(filename):
+            filepath = os.path.join(directory, filename)
+            if os.path.exists(filepath):
+                with open(filepath, 'r') as file:
+                    lines = file.readlines()
+                return [line.strip() for line in lines if line.strip() != '']
+            return None
+
+        targets = ['search_texts']
+        prompt_dict = {}
+
+        for target in targets:
+            prompt = get_prompt(f'{target}.txt')
+            if prompt:
+                prompt_dict[target] = prompt
+
+        return prompt_dict
 
     def downstream_task(self, task, ori_filename, zip_filepath):
         # Replace with your actual downstream task
@@ -76,7 +96,17 @@ class UploadMonitor:
             else:
                 print(f"prompt_dict: {prompt_dict}")
                 item = (extract_dir, prompt_dict, save_dir)
-                self.task_queue.put(item)
+                self.recognize_queue.put(item)
+        if task['type'] == 'retrieval':
+            prompt_dict = self.get_search_prompts(extract_dir)
+            print(f"prompt_len: {len(prompt_dict)}")
+            if len(prompt_dict) == 0:
+                print(f"No prompts in zip package, delete all of them {extract_dir}")
+                shutil.rmtree(extract_dir)
+            else:
+                print(f"prompt_dict: {prompt_dict}")
+                item = (extract_dir, prompt_dict, save_dir)
+                self.retrival_queue.put(item)
 
     def wait_for_all_uploads_to_complete(self, task):
         while True:

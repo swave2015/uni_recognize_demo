@@ -49,7 +49,8 @@ class BEIT3Model:
         
     def infer_text(self, prompt_list):
         prompt_features = []
-        prompt_prefix = "a series of images of "
+        # prompt_prefix = "a series of images of "
+        prompt_prefix = ""
         for prompt in prompt_list:
             start_time = time.time()
             print(f"load prompt: {prompt}")
@@ -81,4 +82,12 @@ class BEIT3Model:
         scores = vision_cls @ self.language_cls.t()
         
         return scores
+    
+    # def extract_img_features(self, input_img):
+    #     input_img = Image.fromarray(cv2.cvtColor(input_img, cv2.COLOR_BGR2RGB))
+    #     input_img = self.transform(input_img).unsqueeze(0).to(self.device)
+    #     vision_cls, _ = self.beit3_model(image=input_img, only_infer=True)
+    #     vision_cls = vision_cls.cpu()
+        
+    #     return vision_cls
 

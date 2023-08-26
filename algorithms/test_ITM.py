@@ -1,10 +1,13 @@
+import sys
+sys.path.append('./LAVIS')
+
 import torch
 from PIL import Image
 import time
 from lavis.models import load_model_and_preprocess
 from lavis.processors import load_processor
 
-raw_image = Image.open("/data1/caoxh/zero_short_action_vid/test_imgs/input.jpg").convert("RGB")
+raw_image = Image.open("./test_imgs/20232918756656.jpg").convert("RGB")
 
 # setup device to use
 device = torch.device("cuda") if torch.cuda.is_available() else "cpu"

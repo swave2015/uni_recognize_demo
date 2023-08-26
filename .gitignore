@@ -2,3 +2,5 @@ algorithms/test_images
 algorithms/test_imgs
 algorithms/model_weights/
 test_misc
+*.pyc
+/algorithms/test_imgs

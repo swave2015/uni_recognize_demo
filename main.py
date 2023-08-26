@@ -9,8 +9,9 @@ import torch
 from queue import Queue
     
 if __name__ == "__main__":
-    data_queue = Queue()
-    monitor = UploadMonitor(data_queue)
+    recognize_queue = Queue()
+    retrival_queue = Queue()
+    monitor = UploadMonitor(recognize_queue, retrival_queue)
     monitor.start_monitoring()
 
     analyzer = VideoAnalyzer(
@@ -19,7 +20,8 @@ if __name__ == "__main__":
         prompt_file_path="/data/xcao/code/uni_recognize_demo/algorithms/config/prompt_custom.txt",
         frame='/data/xcao/code/uni_recognize_demo/algorithms/test_images/16923479689894.png',
         font_path="/data/xcao/code/uni_recognize_demo/algorithms/miscellaneous/fonts/Arial.ttf",
-        task_queue=data_queue
+        recognize_queue=recognize_queue,
+        retrival_queue=retrival_queue
     )
 
     analyzer.start_analyze()
