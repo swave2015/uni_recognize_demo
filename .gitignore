@@ -4,3 +4,4 @@ algorithms/model_weights/
 test_misc
 *.pyc
 /algorithms/test_imgs
+/algorithms/onnx_export

@@ -89,8 +89,8 @@ class BEIT3Model:
         return scores
 
 if __name__ == "__main__":
-    device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
-    prompt_file_path = "/data1/caoxh/zero_short_action_vid/config/prompt.txt"
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    prompt_file_path = "/data/xcao/code/uni_recognize_demo/test_misc/test_prompts/target_actions.txt"
     prompt_list = []
     with open(prompt_file_path, "r") as prompt_file:
         for line in prompt_file:
