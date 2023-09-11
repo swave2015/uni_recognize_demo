@@ -70,6 +70,7 @@ class Blip2ITM(Blip2Qformer):
 
         if match_head == "itm":
             query_tokens = self.query_tokens.expand(image_embeds.shape[0], -1, -1)
+            print(f"itm_query_tokens_shape: {query_tokens.shape}")
             query_atts = torch.ones(query_tokens.size()[:-1], dtype=torch.long).to(
                 image.device
             )
@@ -82,6 +83,7 @@ class Blip2ITM(Blip2Qformer):
                 encoder_attention_mask=image_atts,
                 return_dict=True,
             )
+            print(f"output_itm.last_hidden_state_shape: {output_itm.last_hidden_state.shape}")
             itm_embeddings = output_itm.last_hidden_state[:, : query_tokens.size(1), :]
             itm_logit = self.itm_head(itm_embeddings)
             itm_logit = itm_logit.mean(dim=1)
@@ -97,21 +99,31 @@ class Blip2ITM(Blip2Qformer):
                 encoder_attention_mask=image_atts,
                 return_dict=True,
             )
+
+            print(f"img_query_output.last_hidden_state: {query_output.last_hidden_state.shape}")
             image_feats = F.normalize(
                 self.vision_proj(query_output.last_hidden_state), dim=-1
             )
+
+            print(f"image_feats_shape: {image_feats.shape}")
 
             text_output = self.Qformer.bert(
                 text.input_ids,
                 attention_mask=text.attention_mask,
                 return_dict=True,
             )
+
+            print(f"text_output.last_hidden_state: {text_output.last_hidden_state.shape}")
+
             text_feat = F.normalize(
                 self.text_proj(text_output.last_hidden_state[:, 0, :]), dim=-1
             )
 
+            print(f"text_feat_shape: {text_feat.unsqueeze(-1).shape}")
+
             sims = torch.bmm(image_feats, text_feat.unsqueeze(-1))
             print(f"sims_shape: {sims.shape}")
+            # print(f"sims_values: {sims}")
             sim, _ = torch.max(sims, dim=1)
-
+            print((f"sim_values: {sim}"))
             return sim

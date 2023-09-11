@@ -103,8 +103,13 @@ class BertEmbeddings(nn.Module):
         else:
             embeddings = query_embeds
 
+        print(f"embeddings_output_shape: {embeddings.shape}")
+
         embeddings = self.LayerNorm(embeddings)
         embeddings = self.dropout(embeddings)
+        
+        print(f"return_embeddings_output_shape: {embeddings.shape}")
+
         return embeddings
 
 
@@ -850,7 +855,7 @@ class BertModel(BertPreTrainedModel):
         )
 
         # use_cache = use_cache if use_cache is not None else self.config.use_cache
-
+        
         if input_ids is None:
             assert (
                 query_embeds is not None
@@ -865,6 +870,13 @@ class BertModel(BertPreTrainedModel):
 
         query_length = query_embeds.shape[1] if query_embeds is not None else 0
 
+
+        print(f"input_ids_print----------: {input_ids}")
+        print(f"position_ids_print----------: {position_ids}")
+        print(f"query_embeds_print----------: {query_embeds}")
+        print(f"past_key_values_length_print----------: {past_key_values_length}")
+
+
         embedding_output = self.embeddings(
             input_ids=input_ids,
             position_ids=position_ids,
@@ -873,6 +885,7 @@ class BertModel(BertPreTrainedModel):
         )
 
         input_shape = embedding_output.size()[:-1]
+        print(f"embedding_output_input_shape: {input_shape}")
         batch_size, seq_length = input_shape
         device = embedding_output.device
 
@@ -933,7 +946,7 @@ class BertModel(BertPreTrainedModel):
         # input head_mask has shape [num_heads] or [num_hidden_layers x num_heads]
         # and head_mask is converted to shape [num_hidden_layers x batch x num_heads x seq_length x seq_length]
         head_mask = self.get_head_mask(head_mask, self.config.num_hidden_layers)
-
+        print(f"embedding_output-------shape: {embedding_output.shape}")
         encoder_outputs = self.encoder(
             embedding_output,
             attention_mask=extended_attention_mask,
@@ -947,6 +960,9 @@ class BertModel(BertPreTrainedModel):
             return_dict=return_dict,
             query_length=query_length,
         )
+
+        print(f"embedding_outputs123123-------shape: {encoder_outputs[0].shape}")
+
         sequence_output = encoder_outputs[0]
         pooled_output = (
             self.pooler(sequence_output) if self.pooler is not None else None

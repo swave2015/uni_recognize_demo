@@ -106,6 +106,8 @@ class Blip2Qformer(Blip2Base):
             return_dict=True,
         )
 
+        print(f"query_output: {query_output}")
+
         image_feats = F.normalize(
             self.vision_proj(query_output.last_hidden_state), dim=-1
         )
