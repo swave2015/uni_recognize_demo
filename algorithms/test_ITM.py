@@ -21,19 +21,26 @@ def test_model_with_prompt(prompt):
     itc = False
     txt = text_processors["eval"](prompt)
     start_time = time.time()
+    print(f"max_length---------------------------: {model.max_txt_len}")
     if itm:
         text_token = model.tokenizer(txt, 
                                     padding="max_length",
                                     truncation=True, 
                                     max_length=model.max_txt_len,
                                     return_tensors="pt").to(device)
+                                    
         print(f"input_text_token_shape: {text_token.input_ids.shape}")
         print(f"input_text_token_attention_mask_shape: {text_token.attention_mask.shape}")
+        print(f"img_shape: {img.shape}")
         itm_output = model(img, text_token.input_ids, text_token.attention_mask)
 
         # itm_output = model({"image": img, "text_input": txt}, match_head="itm")
-        itm_scores = torch.nn.functional.softmax(itm_output, dim=1)
-        print(f'The image and text are matched with a probability of {itm_scores[:, 1].item():.3%}')
+        print(f"itm_output_print: {itm_output}")
+        # itm_scores = torch.nn.functional.softmax(itm_output, dim=1)
+
+        # print(f"itm_scores: {itm_scores}")
+        # print(f"itm_scores_shape: {itm_scores.shape}")
+        # print(f'The image and text are matched with a probability of {itm_scores[:, 1].item():.3%}')
         end_time = time.time()
         elapsed_time = (time.time() - start_time) * 1000  # Convert to milliseconds
         # print(f"input prompt {prompt}")

@@ -209,8 +209,12 @@ def load_model_and_preprocess(name, model_type, is_eval=False, device="cpu"):
     cfg = OmegaConf.load(model_cls.default_config_path(model_type))
     if cfg is not None:
         preprocess_cfg = cfg.preprocess
+        print(f"preprocess_cfg: {preprocess_cfg}")
 
         vis_processors, txt_processors = load_preprocess(preprocess_cfg)
+
+        print(f"vis_processors_cfg: {vis_processors}")
+        print(f"txt_processors_cfg: {txt_processors}")
     else:
         vis_processors, txt_processors = None, None
         logging.info(

@@ -95,10 +95,7 @@ class BertEmbeddings(nn.Module):
         if input_ids is not None:
             embeddings = self.word_embeddings(input_ids)
             if self.position_embedding_type == "absolute":
-                print(f"bert_encoder_position_ids_shape: {position_ids.shape}")
                 position_embeddings = self.position_embeddings(position_ids)
-                print(f"bert_encoder_embedding_shape: {embeddings.shape}")
-                print(f"bert_encoder_position_embeddings_shape: {position_embeddings.shape}")
                 embeddings = embeddings + position_embeddings
 
             if query_embeds is not None:
@@ -812,10 +809,18 @@ class BertModel(BertPreTrainedModel):
     def forward(
         self,
         input_ids=None,
-        query_embeds=None,
         attention_mask=None,
+        position_ids=None,
+        head_mask=None,
+        query_embeds=None,
         encoder_hidden_states=None,
-        encoder_attention_mask=None
+        encoder_attention_mask=None,
+        past_key_values=None,
+        use_cache=None,
+        output_attentions=None,
+        output_hidden_states=None,
+        return_dict=None,
+        is_decoder=False,
     ):
         r"""
         encoder_hidden_states  (:obj:`torch.FloatTensor` of shape :obj:`(batch_size, sequence_length, hidden_size)`, `optional`):
@@ -835,15 +840,6 @@ class BertModel(BertPreTrainedModel):
             If set to :obj:`True`, :obj:`past_key_values` key value states are returned and can be used to speed up
             decoding (see :obj:`past_key_values`).
         """
-        position_ids=None
-        head_mask=None
-        past_key_values=None
-        use_cache=None
-        output_attentions=None
-        output_hidden_states=None
-        return_dict=True
-        is_decoder=False
-
         output_attentions = (
             output_attentions
             if output_attentions is not None
@@ -875,9 +871,9 @@ class BertModel(BertPreTrainedModel):
         query_length = query_embeds.shape[1] if query_embeds is not None else 0
 
 
-        print(f"input_ids_print----------: {input_ids.shape}")
+        print(f"input_ids_print----------: {input_ids}")
         print(f"position_ids_print----------: {position_ids}")
-        print(f"query_embeds_print----------: {query_embeds.shape}")
+        print(f"query_embeds_print----------: {query_embeds}")
         print(f"past_key_values_length_print----------: {past_key_values_length}")
 
 
@@ -975,14 +971,6 @@ class BertModel(BertPreTrainedModel):
         if not return_dict:
             return (sequence_output, pooled_output) + encoder_outputs[1:]
 
-        # return BaseModelOutputWithPoolingAndCrossAttentions(
-        #     last_hidden_state=sequence_output,
-        #     pooler_output=pooled_output,
-        #     past_key_values=encoder_outputs.past_key_values,
-        #     hidden_states=encoder_outputs.hidden_states,
-        #     attentions=encoder_outputs.attentions,
-        #     cross_attentions=encoder_outputs.cross_attentions,
-        # )
         return BaseModelOutputWithPoolingAndCrossAttentions(
             last_hidden_state=sequence_output,
             pooler_output=pooled_output,
@@ -990,7 +978,7 @@ class BertModel(BertPreTrainedModel):
             hidden_states=encoder_outputs.hidden_states,
             attentions=encoder_outputs.attentions,
             cross_attentions=encoder_outputs.cross_attentions,
-        ).last_hidden_state[:, : 32, :]
+        )
 
 
 class BertLMHeadModel(BertPreTrainedModel):

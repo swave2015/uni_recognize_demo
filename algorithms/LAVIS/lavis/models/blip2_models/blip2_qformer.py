@@ -48,7 +48,7 @@ class Blip2Qformer(Blip2Base):
         img_size=224,
         drop_path_rate=0,
         use_grad_checkpoint=False,
-        vit_precision="fp16",
+        vit_precision="fp32",
         freeze_vit=True,
         num_query_token=32,
         cross_attention_freq=2,

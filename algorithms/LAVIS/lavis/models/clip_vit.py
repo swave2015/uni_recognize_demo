@@ -239,7 +239,7 @@ def interpolate_pos_embed(model, state_dict, interpolation: str = 'bicubic', seq
     state_dict['positional_embedding'] = new_pos_embed
     
     
-def create_clip_vit_L(img_size=224,use_checkpoint=False,precision="fp16"):
+def create_clip_vit_L(img_size=224,use_checkpoint=False,precision="fp32"):
     model = VisionTransformer(
             input_resolution=img_size,
             patch_size=14,

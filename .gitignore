@@ -5,3 +5,5 @@ test_misc
 *.pyc
 /algorithms/test_imgs
 /algorithms/onnx_export
+algorithms/blip2_onnx_full_model_export
+algorithms/blip2_onnx_export/
